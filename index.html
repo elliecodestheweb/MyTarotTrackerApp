@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/9ea21f5ce5.js" crossorigin="anonymous"></script>
+    <title>My Deck Tracker</title>
+</head>
+<body>
+    <div class="container mt-4">
+
+        <h1><i class="fas fa-moon"></i> My Deck Tracker</h1>
+
+        <form id="deck-entry">
+            <div class="deck-group mt-5">
+                <label for="deckName">Deck Name</label>
+                <input type="text" id="deckName" class="form-control">
+            </div>
+            <div class="deck-group mt-3">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="deck-group mt-3">
+                <label for="usage">Deck Type</label>
+                <input type="text" id="usage" class="form-control">
+            </div>
+            <input type="submit" value="Add Deck" class="btn btn-primary btn-block mt-3">
+        </form>
+
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Deck Name</th>
+                    <th>Author</th>
+                    <th>Deck Type</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="deck-list"></tbody>
+        </table>
+
+    </div>
+
+    <script src="javascript/app.js"></script>
+    
+</body>
+</html>
